@@ -1,4 +1,5 @@
 var noCapsList = "a, an, the, at, by, for, in, of, on, to, up, and, as, but, it, or, nor";
+
 function titleCase(string) {
   var results = "";
   string.split(" ").forEach(function(word) {
@@ -11,3 +12,8 @@ function titleCase(string) {
   results = results.slice(0, -1)
   return results;
 }
+
+
+$(document).ready(function(){
+  $("#result").hide();
+});
