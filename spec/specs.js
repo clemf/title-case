@@ -14,4 +14,9 @@ describe("titleCase", function() {
   it("does not capitalize words like and or the", function() {
     expect(titleCase("cat the meow")).to.equal("Cat the Meow");
   });
+
+  it("Makes sure the first letter is always capitalized", function() {
+    expect(titleCase("a cat")).to.equal("A Cat");
+  });
+
 });
