@@ -10,7 +10,11 @@ function titleCase(string) {
     }
   });
   results = results.slice(0, -1)
+  if (results === "") {
+  return "Error: no title found!"  
+  } else {
   return results;
+  }
 }
 
 
