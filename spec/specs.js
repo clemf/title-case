@@ -15,8 +15,11 @@ describe("titleCase", function() {
     expect(titleCase("cat the meow")).to.equal("Cat the Meow");
   });
 
-  it("Makes sure the first letter is always capitalized", function() {
+  it("makes sure the first letter is always capitalized", function() {
     expect(titleCase("a cat")).to.equal("A Cat");
   });
 
+  it("makes sure the first letter of the last word is capitalized", function() {
+    expect(titleCase("Cat of")).to.equal("Cat Of");
+  });
 });

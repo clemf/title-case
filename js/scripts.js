@@ -9,9 +9,11 @@ function titleCase(string) {
       results = results + (word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()) + " ";
     }
   });
-  results = results.slice(0, -1)
+  results = results.slice(0, -1);
+  var lastWordId = results.search(/\w+$/);
+  results = results.substr(0, lastWordId) + results.charAt(lastWordId).toUpperCase() + results.substr(lastWordId + 1, results.length);
   if (results === "") {
-  return "Error: no title found!"  
+  return "Error: no title found!"
   } else {
   return results;
   }
