@@ -16,4 +16,12 @@ function titleCase(string) {
 
 $(document).ready(function(){
   $("#result").hide();
+  $("form#title-case").submit(function(event) {
+    var string = $("input#string").val();
+    var result = titleCase(string);
+
+    $(".result").text(result);
+    $("#result").show();
+    event.preventDefault();
+  });
 });
