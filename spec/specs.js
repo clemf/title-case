@@ -10,4 +10,8 @@ describe("titleCase", function() {
   it("parses multiple word input", function() {
     expect(titleCase("CaT meOw")).to.equal("Cat Meow");
   });
+
+  it("does not capitalize words like and or the", function() {
+    expect(titleCase("cat the meow")).to.equal("Cat the Meow");
+  });
 });
