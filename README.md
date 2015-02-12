@@ -1,7 +1,7 @@
 title-case
 ============
 
-A javascript web app that capitalizes titles appropriately. Written in JavaScript with the help of [JQuery](http://jquery.com/) [Mocha](http://mochajs.org/), [Chai](http://chaijs.com/), and [Bootstrap](http://http://getbootstrap.com/).
+A JavaScript web app that capitalizes titles appropriately. Written with the help of [JQuery](http://jquery.com/) [Mocha](http://mochajs.org/), [Chai](http://chaijs.com/), and [Bootstrap](http://http://getbootstrap.com/).
 
 Usage
 -----
